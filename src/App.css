@@ -36,3 +36,23 @@
     transform: rotate(360deg);
   }
 }
+.navbar-dark .navbar-toggler {
+  margin-left: 85%;
+}
+@media (min-width: 768px) {
+  .navbar .navbar-nav {
+      text-align: center;
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+      width:100%;
+  }
+
+  .navbar .navbar-collapse {
+      text-align: center;
+  }
+  .nav-item{
+    display: inline-block;
+    margin-right:20px
+  }
+}
