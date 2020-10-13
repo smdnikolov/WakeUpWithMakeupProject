@@ -1,5 +1,6 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom"
+import Home from '../components/home'
 
 
 
@@ -9,7 +10,8 @@ const Router = (props) => {
 
     return (
         <Switch>
-            {/* <Route path="/" exact component={Home} />
+            { <Route path="/" exact component={Home} />
+            /*
             <ProtectedRoute user={user} path="/login" component={Login} />
             <ProtectedRoute user={user} path="/register" component={Register} />
             <Route path="/category/:name" component={Category} />

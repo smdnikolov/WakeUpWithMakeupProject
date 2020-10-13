@@ -2,7 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../utils/1j+ojFVDOMkX9Wytexe43D6kifCCrhBGkBbNwXs1M3EMoAJtliAvhPds9vk5.png'
 
+
+
 const Header = () => {
+
+    const before = 'https://picsum.photos/id/237/536/354'
+    const after = 'https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
+
 
     return (
         <div>
@@ -27,6 +33,7 @@ const Header = () => {
                     </ul>
                 </div>
             </nav>
+
         </div>
     )
 }

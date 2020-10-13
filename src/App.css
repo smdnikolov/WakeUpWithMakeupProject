@@ -39,6 +39,62 @@
 .navbar-dark .navbar-toggler {
   margin-left: 85%;
 }
+.ba-slider {
+  position: relative;
+  overflow: hidden;
+}
+
+.ba-slider img {
+  width: 100%;
+  display:block;
+}
+
+.resize {
+  position: absolute;
+  top:0;
+  left: 0;
+  height: 100%;
+  width: 50%;
+  overflow: hidden;
+}
+
+
+.handle {
+position:absolute; 
+left:50%;
+top:0;
+bottom:0;
+width:4px;
+margin-left:-2px;
+
+background: white;
+cursor: ew-resize;
+}
+
+.handle:after {
+position: absolute;
+top: 50%;
+width: 32px;
+height: 32px;
+margin: -16px 0 0 -16px;
+content: '\21d4';
+color: white;
+font-weight: bold;
+font-size: 18px;
+text-align: center;
+
+cursor: grab;
+border-radius: 50%;
+transition: all 0.3s ease;
+}
+
+.draggable:after {
+  width: 24px;
+  height: 24px;
+  margin: -12px 0 0 -12px;
+  line-height:24px;
+  font-size:15px;
+}
 @media (min-width: 768px) {
   .navbar .navbar-nav {
       text-align: center;
@@ -47,6 +103,29 @@
       vertical-align: top;
       width:100%;
   }
+  .handle:after {
+    position: absolute;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin: -32px 0 0 -32px;
+    content: '\21d4';
+    color: white;
+    font-weight: bold;
+    font-size: 36px;
+    text-align: center;
+    cursor: grab;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    }
+    
+    .draggable:after {
+      width: 48px;
+      height: 48px;
+      margin: -24px 0 0 -24px;
+      line-height:48px;
+      font-size:30px;
+    }
 
   .navbar .navbar-collapse {
       text-align: center;
@@ -55,4 +134,10 @@
     display: inline-block;
     margin-right:20px
   }
+}
+.navbar {
+  margin: 20px 0px 20px ;
+}
+.nav-link{
+  font-size: 30px;
 }

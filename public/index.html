@@ -6,17 +6,78 @@
   <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <title>React App</title>
+  <title>Wake Up With Makeup</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
   <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-X.X.X.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.ba-slider').each(function () {
+        var cur = $(this);
+        var width = cur.width() + 'px';
+        cur.find('.resize img').css('width', width);
+        drags(cur.find('.handle'), cur.find('.resize'), cur);
+      });
+    });
+
+    $(window).resize(function () {
+      $('.ba-slider').each(function () {
+        var cur = $(this);
+        var width = cur.width() + 'px';
+        cur.find('.resize img').css('width', width);
+      });
+    });
+
+    function drags(dragElement, resizeElement, container) {
+      dragElement.on('mousedown touchstart', function (e) {
+        dragElement.addClass('draggable');
+        resizeElement.addClass('resizable');
+        var startX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+        var dragWidth = dragElement.outerWidth(),
+          posX = dragElement.offset().left + dragWidth - startX,
+          containerOffset = container.offset().left,
+          containerWidth = container.outerWidth();
+        minLeft = containerOffset + 10;
+        maxLeft = containerOffset + containerWidth - dragWidth - 10;
+        dragElement.parents().on("mousemove touchmove", function (e) {
+          var moveX = (e.pageX) ? e.pageX : e.originalEvent.touches[0].pageX;
+          leftValue = moveX + posX - dragWidth;
+          if (leftValue < minLeft) {
+            leftValue = minLeft;
+          } else if (leftValue > maxLeft) {
+            leftValue = maxLeft;
+          }
+          widthValue = (leftValue + dragWidth / 2 - containerOffset) * 100 / containerWidth + '%';
+          $('.draggable').css('left', widthValue).on('mouseup touchend touchcancel', function () {
+            $(this).removeClass('draggable');
+            resizeElement.removeClass('resizable');
+          });
+          $('.resizable').css('width', widthValue);
+        }).on('mouseup touchend touchcancel', function () {
+          dragElement.removeClass('draggable');
+          resizeElement.removeClass('resizable');
+        });
+        e.preventDefault();
+      }).on('mouseup touchend touchcancel', function (e) {
+        dragElement.removeClass('draggable');
+        resizeElement.removeClass('resizable');
+      });
+    }
+  </script>
 </head>
 
 <body>
