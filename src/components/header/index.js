@@ -1,40 +1,67 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import logo from '../../utils/1j+ojFVDOMkX9Wytexe43D6kifCCrhBGkBbNwXs1M3EMoAJtliAvhPds9vk5.png'
-
-
+import call from '../../utils/call.png'
+import viber from '../../utils/viber.png'
+import instagram from '../../utils/instagram.png'
+import facebook from '../../utils/facebook.png'
 
 const Header = () => {
-
-    const before = 'https://picsum.photos/id/237/536/354'
-    const after = 'https://images.unsplash.com/photo-1508138221679-760a23a2285b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'
-
 
     return (
         <div>
             <Link className="navbar-brand" to="/">
                 <img className="logo" src={logo} width="90%" alt="" />
             </Link>
-            <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+            <nav>
+                <div className="call">
+                    <a href="tel:+359879997600">
+                        <img src={call} width="30px" />
+                    </a>
+                </div>
+                <div className="viber">
+                    <a href="viber://chat?number=+359879997600">
+                        <img src={viber} width="30px" />
+                    </a>
+                </div>
+            </nav>
+            <nav class="navbar navbar-expand-md  navbar-dark">
+                <div>
+                    <a className="social" href="https://www.facebook.com/permanent.makeup.elenayordanova">
+                        <img src={facebook} width="30px" />
+                    </a>
+                    <a className="social" href="https://www.instagram.com/wake_up_with_makeup/">
+                        <img src={instagram} width="30px" />
+                    </a>
+                </div>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="collapsibleNavbar">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Услиги</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Цени</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
+                            <a class="nav-link" href="#">Галерия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ЧЗВ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакти</a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
-        </div>
+        </div >
     )
 }
 
