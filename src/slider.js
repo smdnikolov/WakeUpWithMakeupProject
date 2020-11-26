@@ -51,5 +51,6 @@ function slider() {
             resizeElement.removeClass('resizable');
         });
     }
+
 }
 slider()

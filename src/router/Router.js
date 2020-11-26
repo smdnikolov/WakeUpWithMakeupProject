@@ -1,17 +1,27 @@
 import React from 'react';
 import { Route, Switch } from "react-router-dom"
 import Home from '../components/home'
+import Services from '../components/services'
+import Prices from '../components/prices'
+import Gallery from '../components/gallery'
+import FAQ from '../components/faq'
+import Contacts from '../components/contacts'
 
 
 
 
-const Router = (props) => {
+const Router = () => {
 
 
     return (
         <Switch>
-            { <Route path="/" exact component={Home} />
-            /*
+            <Route path="/" exact component={Home} />
+            <Route path="/услуги" exact component={Services} />
+            <Route path="/цени" exact component={Prices} />
+            <Route path="/Галерия" exact component={Gallery} />
+            <Route path="/чзв" exact component={FAQ} />
+            <Route path="/контакти" exact component={Contacts} />
+            {/*
             <ProtectedRoute user={user} path="/login" component={Login} />
             <ProtectedRoute user={user} path="/register" component={Register} />
             <Route path="/category/:name" component={Category} />
