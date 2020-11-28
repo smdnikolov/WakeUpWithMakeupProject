@@ -6,7 +6,7 @@ import viber from '../../utils/viber.png'
 import instagram from '../../utils/instagram.png'
 import facebook from '../../utils/facebook.png'
 
-const Header = () => {
+function Header() {
 
     return (
         <div>
@@ -16,46 +16,45 @@ const Header = () => {
             <nav>
                 <div className="call">
                     <a href="tel:+359879997600">
-                        <img src={call} width="30px" />
+                        <img src={call} width="30px" alt="" />
                     </a>
                 </div>
                 <div className="viber">
-                    <a href="viber://chat?number=+359879997600">
-                        <img src={viber} width="30px" />
+                    <a href="https://www.messenger.com/t/100000208277245">
+                        <img src={viber} width="30px" alt="" />
                     </a>
                 </div>
             </nav>
-            <nav class="navbar navbar-expand-md  navbar-dark">
+            <nav className="navbar navbar-expand-md  navbar-dark">
                 <div>
                     <a className="social" href="https://www.facebook.com/permanent.makeup.elenayordanova">
-                        <img src={facebook} width="30px" />
+                        <img src={facebook} width="30px" alt="" />
                     </a>
                     <a className="social" href="https://www.instagram.com/wake_up_with_makeup/">
-                        <img src={instagram} width="30px" />
+                        <img src={instagram} width="30px" alt="" />
                     </a>
                 </div>
 
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
 
-                    <span class="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Услиги</a>
+                <div className=" mobile collapse navbar-collapse" id="collapsibleNavbar" data-toggle="hide" data-target="#collapsibleNavbar" >
+                    <ul className="navbar-nav" >
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/услуги" >Услуги</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Цени</a>
+                        <li className="nav-item" >
+                            <Link className="nav-link" to="/цени" >Цени</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Галерия</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/галерия">Галерия</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">ЧЗВ</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/чзв">ЧЗВ</Link>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Контакти</a>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/контакти">Контакти</Link>
                         </li>
                     </ul>
                 </div>
