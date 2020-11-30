@@ -134,7 +134,7 @@ margin-left:20px;
 }
 .hydrated {
   --handle-color: #d7d7d7;
-  --divider-color: #d7d7d7;
+  --divider-color: #fff;
   --handle-opacity: none;
   --handle-opacity-active: 'none';
 }
