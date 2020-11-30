@@ -129,3 +129,19 @@ margin-left:20px;
     margin-right:20px
   }
 }
+.img{
+  max-width:95%
+}
+.hydrated {
+  --handle-color: #d7d7d7;
+  --divider-color: #d7d7d7;
+  --handle-opacity: none;
+  --handle-opacity-active: 'none';
+}
+.hydrated:focus{
+  outline:none
+}
+
+
+
+

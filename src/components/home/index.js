@@ -1,33 +1,30 @@
 import React from 'react'
+import {
+    defineCustomElements,
+    applyPolyfills,
+} from 'img-comparison-slider/loader';
 
-
+applyPolyfills().then(() => defineCustomElements(window));
 
 const Home = () => {
 
-    const isMobile = window.screen.width > 700 ? false : true
 
     return (
 
         <div>
-            <div id="example">
-                {/* <img src="http://egegorgulu.com/assets/img/beforeafter/after.jpg" alt="Before" />
-                <img src="http://egegorgulu.com/assets/img/beforeafter/before.jpg" alt="After" /> */}
-            </div>
-            {isMobile
-                // ? <div style={{ width: 360, height: 200, display: 'inline-block' }}>
-                //     <ImageSlider
-                //         image1=""
-                //         image2=""
-                //     />
-                // </div>
-                // : <div style={{ width: 700, height: 500, display: 'inline-block' }}>
-                //     <ImageSlider
-                //         image1="http://egegorgulu.com/assets/img/beforeafter/after.jpg"
-                //         image2="http://egegorgulu.com/assets/img/beforeafter/before.jpg"
-                //     />
-                // </div>
-            }
+            <img-comparison-slider>
+                <img className='img' slot="before" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/before.jpg" alt='' />
+                <img className='img' slot="after" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/after.jpg" alt='' />
+            </img-comparison-slider>
+            {/* <div id="slider1" data-beer-label="before">
+                <img className='img' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/before.jpg" alt="" />
+                <div className="beer-reveal" data-beer-label="after">
+                    <img className='img' src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/74321/after.jpg" alt="" />
+                </div>
+            </div> */}
+
         </div>
+
     )
 
 }
