@@ -47,6 +47,7 @@ function Header() {
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar" data-toggle="hide" data-target="#collapsibleNavbar" >
+                    <hr className="navbar-hr" />
                     <ul className="navbar-nav" onClick={hideNavBar}>
                         <li className="nav-item">
                             <Link className="nav-link" to="/услуги" >Услуги</Link>
@@ -64,6 +65,7 @@ function Header() {
                             <Link className="nav-link" to="/контакти">Контакти</Link>
                         </li>
                     </ul>
+                    <hr className="navbar-hr" />
                 </div>
             </nav>
 
