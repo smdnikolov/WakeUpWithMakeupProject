@@ -8,13 +8,6 @@ import facebook from '../../utils/facebook.png'
 
 function Header() {
 
-    const hideNavBar = e => {
-        if (window.screen.width < 732) {
-            const navBar = document.getElementById('collapsibleNavbar')
-            navBar.classList.remove('show')
-        }
-    }
-
     return (
         <div>
             <Link className="navbar-brand" to="/">
@@ -48,7 +41,7 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar" data-toggle="hide" data-target="#collapsibleNavbar" >
                     <hr className="navbar-hr" />
-                    <ul className="navbar-nav" onClick={hideNavBar}>
+                    <ul className="navbar-nav" >
                         <li className="nav-item">
                             <Link className="nav-link" to="/услуги" >Услуги</Link>
                         </li>
