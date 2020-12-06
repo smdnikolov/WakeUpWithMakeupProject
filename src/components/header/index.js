@@ -27,16 +27,15 @@ function Header() {
             </nav>
             <nav className="navbar navbar-expand-md  navbar-dark">
                 <div>
-                    <a className="social" href="https://www.facebook.com/permanent.makeup.elenayordanova">
+                    <a className="social" target='_blank' rel="noopener noreferrer" href="https://www.facebook.com/permanent.makeup.elenayordanova">
                         <img src={facebook} width="30px" alt="" />
                     </a>
-                    <a className="social" href="https://www.instagram.com/wake_up_with_makeup/">
+                    <a className="social" target='_blank' rel="noopener noreferrer" href="https://www.instagram.com/wake_up_with_makeup/">
                         <img src={instagram} width="30px" alt="" />
                     </a>
                 </div>
 
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-
                     <span className="navbar-toggler-icon"></span>
                 </button>
                 <div className="collapse navbar-collapse" id="collapsibleNavbar" data-toggle="hide" data-target="#collapsibleNavbar" >
