@@ -11,12 +11,20 @@ const Prices = () => {
                     <div className="col col-1">Услуга</div>
                     <div className="col col-4">Цена</div>
                 </li>
-                {priceList.map(obj => (
-                    <li className='table-row' id={obj.id} key={obj.id}>
-                        <div className="col col-1 col-2 col-3" data-label="Услуга">{obj.service}</div>
-                        <div className="col col-4" data-label="Цена">{obj.price}</div>
-                    </li>
-                ))}
+                {priceList.map((obj, index) =>
+
+                    <>
+                        {index % 2 === 0
+                            ? <li className='table-row' id={obj.id} key={obj.id}>
+                                <div className="col" data-label="Услуга">{obj.service}</div>
+                                <div className="col-4" data-label="Цена">{obj.price}</div>
+                            </li>
+                            : <li className='odd-row table-row' id={obj.id} key={obj.id}>
+                                <div className="col" data-label="Услуга">{obj.service}</div>
+                                <div className="col-4" data-label="Цена">{obj.price}</div>
+                            </li>}
+                    </>
+                )}
 
 
             </ul>
@@ -24,10 +32,10 @@ const Prices = () => {
     );
     return (
         <div>
-            <h1>Prices</h1>
-            <div className='container'>
-                <Table priceList={list} />
-            </div>
+            <h1 className="page-header">Цени</h1>
+
+            <Table priceList={list} />
+
         </div>
     )
 }
