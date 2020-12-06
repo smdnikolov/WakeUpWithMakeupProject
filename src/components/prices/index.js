@@ -1,8 +1,6 @@
 import React from 'react'
 import priceList from '../../price-list'
 
-
-
 const Prices = () => {
     const asd = [...priceList]
     const Test = ({ priceList }) => (
