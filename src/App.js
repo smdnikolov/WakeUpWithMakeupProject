@@ -6,6 +6,7 @@ import Footer from './components/footer'
 import ScrollToTop from './components/scroll-to-top'
 
 function App() {
+
   return (
     <div className="App">
       <Header />
