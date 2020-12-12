@@ -1,0 +1,43 @@
+.ekko-lightbox a {
+    opacity: 1;
+    text-decoration: none;
+  
+}
+span{
+    font-size: -webkit-xxx-large;
+}
+
+@media screen and (max-width: 767px) {
+  .gallery{
+      display: inline-flex;
+  }
+  .row{
+      margin-right: 0px;
+      margin-left:0px;
+  }
+  .col-md-8{
+      padding-left: 5px;
+      padding-right:5px;
+  }
+  .col-sm-4{
+    padding-left: 5px;
+    padding-right:5px;
+}
+   .gallery a {
+       padding-bottom: 15px;
+   }
+}
+
+@media screen and (min-width: 768px){
+    .gallery {
+            a{
+                padding-right:0px;
+            
+              
+            }
+        }
+        .col-sm-4 {
+            padding-top: 2%;
+        }
+}
+
