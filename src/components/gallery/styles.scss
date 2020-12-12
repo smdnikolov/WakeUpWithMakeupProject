@@ -3,6 +3,31 @@
     text-decoration: none;
   
 }
+.ekko-lightbox a:hover {
+    opacity: 1;
+    cursor: default;
+    text-decoration: none;
+}
+.ekko-lightbox a span:hover {
+    opacity: 1;
+    cursor: pointer;
+    text-decoration: none;
+}
+.ekko-lightbox-nav-overlay a span {
+    padding: 0 1px;
+}
+.ekko-lightbox-nav-overlay a:last-child span {
+    text-align: right;
+   position: absolute;
+   right: 0px;
+    left: auto;
+}
+
+.ekko-lightbox-nav-overlay a>* {
+    -ms-flex-positive: 1;
+    flex-grow: 0;
+}
+
 span{
     font-size: -webkit-xxx-large;
 }
@@ -39,5 +64,6 @@ span{
         .col-sm-4 {
             padding-top: 2%;
         }
+        
 }
 

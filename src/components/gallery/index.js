@@ -14,23 +14,17 @@ const Gallery = () => {
                         <a href={img1} data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
                             <img src={img2} className="img-fluid" alt='' />
                         </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=252" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=252" className="img-fluid" alt='' />
+                        <a href={img1} data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
+                            <img src={img2} className="img-fluid" alt='' />
                         </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" className="img-fluid" alt='' />
+                        <a href={img1} data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
+                            <img src={img2} className="img-fluid" alt='' />
                         </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" className="img-fluid" alt='' />
+                        <a href={img1} data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
+                            <img src={img2} className="img-fluid" alt='' />
                         </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" className="img-fluid" alt='' />
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" className="img-fluid" alt='' />
-                        </a>
-                        <a href="https://unsplash.it/1200/768.jpg?image=253" data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
-                            <img src="https://unsplash.it/600.jpg?image=253" className="img-fluid" alt='' />
+                        <a href={img1} data-toggle="lightbox" data-gallery="example-gallery" className="col-sm-4">
+                            <img src={img2} className="img-fluid" alt='' />
                         </a>
 
                     </div>
