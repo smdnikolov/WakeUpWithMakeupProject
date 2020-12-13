@@ -32,14 +32,23 @@ const Gallery = () => {
         width: window.innerWidth
     })
     useEffect(() => {
-        window.addEventListener('resize', () => setDimensions({ height: window.innerHeight, width: window.innerWidth }))
+        function handleResize() {
+            setDimensions({
+                height: window.innerHeight,
+                width: window.innerWidth
+            })
+        }
+        window.addEventListener('resize', handleResize)
+        return () => {
+            window.removeEventListener('resize', handleResize)
+        };
     })
 
     return (
         <div>
             <h1 className="page-header">Галерия</h1>
             <div className="row justify-content-center">
-                <div className="col-md-8">
+                <div className="col-md-7">
                     <GalleryList />
                 </div>
             </div>

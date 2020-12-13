@@ -1,0 +1,21 @@
+.card-body {
+    padding: 0.5rem;
+    text-align: justify;
+}
+.card {
+    margin-bottom: 5px;
+    text-align: left;
+   
+}
+.btn-link{
+    text-align: left;
+}
+.card-body p {
+    font-size: 15px;
+  }
+
+@media only screen and (min-width: 1024px) {
+    .card-body p {
+        font-size: 20px;
+      }
+  }
