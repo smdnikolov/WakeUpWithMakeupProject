@@ -8,24 +8,29 @@ import ScrollToTop from './components/scroll-to-top'
 
 function App() {
   const [loading, setLoading] = useState(true)
-  useEffect(() => {
 
-
-    window.addEventListener('load', function () {
+  const isFontLoaded = () => {
+    document.fonts.onloadingdone = () => {
       setLoading(false)
-    })
+    }
+  }
 
+  useEffect(() => {
+    isFontLoaded()
+  })
 
-  }, [loading])
   return (
-    loading ? <Loader></Loader>
-      : <div className="App">
+    <div className="App">
+      {!loading ? <>
         <Header />
         <ScrollToTop />
         <Router />
         <Footer />
-      </div>
+      </>
+        : <Loader></Loader>}
+    </div>
   )
+
 }
 
 export default App;
