@@ -178,7 +178,12 @@ hr {
 span {
   font-size: x-large;
 }
-
+.navbar-toggler[aria-expanded="true"] .navbar-toggler-icon{
+  background-image: url('./utils/close.png');
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url('./utils/menu.png');
+}
 
 
 

@@ -10,20 +10,26 @@ const FAQ = () => {
             return text.split('\n').map((str, index) => <p key={index}>{str}</p>);
         }
 
-        return <div id="accordion" className='container'>
+        return <div className='container'>
             {faq.map(q => {
-                return <div className='card' key={q.id}>
-                    <div className="card-header" id={'heading' + q.id} role="tab">
-                        <h3 className="mb-0 ">
-                            <button className="btn btn-link " data-toggle="collapse" data-target={`#collapse${q.id}`} aria-expanded="false" aria-controls={`collapse${q.id}`}>
-                                {q.question}
-                            </button>
-                        </h3>
 
-                    </div>
-                    <div id={`collapse${q.id}`} className="collapse " aria-labelledby={'heading' + q.id} data-parent="#accordion">
-                        <div className="card-body">
-                            <NewlineText text={q.answer}></NewlineText>
+                return <div className='row' key={q.id}>
+                    <div className="col-md-12">
+                        <div className="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                            <div className="panel panel-default">
+                                <div className="panel-heading" role="tab" id={'heading' + q.id}>
+                                    <h4 className="panel-title">
+                                        <a className="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href={`#collapse${q.id}`} aria-expanded="false" aria-controls={`collapse${q.id}`}>
+                                            {q.question}
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div id={`collapse${q.id}`} className="panel-collapse collapse in" role="tabpanel" aria-labelledby={'heading' + q.id}>
+                                    <div className="panel-body">
+                                        <NewlineText text={q.answer}></NewlineText>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

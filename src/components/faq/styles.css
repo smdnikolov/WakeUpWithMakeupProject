@@ -1,21 +1,58 @@
-.card-body {
-    padding: 0.5rem;
+a:hover,a:focus{
+    text-decoration: none;
+    outline: none;
+}
+#accordion .panel{
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+#accordion .panel-heading{
+    padding: 0;
+    border: none;
+}
+#accordion .panel-title a{
+    display: block;
+    padding: 10px 35px 10px 5px;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    border: 1px solid transparent;
+    position: relative;
     text-align: justify;
 }
-.card {
-    margin-bottom: 5px;
-    text-align: left;
-   
-}
-.btn-link{
-    text-align: left;
-}
-.card-body p {
-    font-size: 15px;
-  }
 
-@media only screen and (min-width: 1024px) {
-    .card-body p {
-        font-size: 20px;
-      }
-  }
+#accordion .panel-title a:before,
+#accordion .panel-title a.collapsed:before{
+    content: "✖";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 18px;
+    font-weight: normal;
+    color: #000;
+    position: absolute;
+    top: 21%;
+    right: 5px;
+    transition: all 0.5s ease 0s;
+}
+#accordion .panel-title a.collapsed:before {
+    content: "✚";
+}
+#accordion .panel-body{
+    padding: 10px 30px;
+    border: none;
+    font-size: 14px;
+    color: #808080;
+    line-height: 25px;
+}
+#accordion .panel-body p{
+    margin-bottom: 20px;
+    text-align: justify;
+}
+#accordion .panel-default {
+    border: 2px solid #000;
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
