@@ -11,7 +11,7 @@ const GalleryList = () => {
     return <div className='row gallery'>
         {images.map((image, index) => {
 
-            if (window.screen.width < window.screen.height) {
+            if (window.screen.width < window.screen.height && window.screen.width < 768) {
                 // eslint-disable-next-line
                 return <a className="col-sm-4" key={`key-${index}`}>
                     <img src={image} className="img-fluid" alt='' />
@@ -47,8 +47,8 @@ const Gallery = () => {
     return (
         <div>
             <h1 className="page-header">Галерия</h1>
-            <div className="row justify-content-center">
-                <div className="col-md-7">
+            <div className="row justify-content-center container">
+                <div className="col-md-12">
                     <GalleryList />
                 </div>
             </div>
