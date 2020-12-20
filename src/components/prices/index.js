@@ -1,5 +1,5 @@
 import React from 'react'
-import list from '../../price-list'
+import list from './price-list'
 import './styles.scss'
 
 const Prices = () => {

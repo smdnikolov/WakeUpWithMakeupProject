@@ -9,15 +9,7 @@ import ScrollToTop from './components/scroll-to-top'
 function App() {
   const [loading, setLoading] = useState(true)
 
-  const isFontLoaded = () => {
-    document.fonts.onloadingdone = () => {
-      setLoading(false)
-    }
-  }
-
-  useEffect(() => {
-    isFontLoaded()
-  })
+  useEffect(() => { fetch('/static/media/1j+ojFVDOMkX9Wytexe43D6kifCCrhBGkBbNwXs1M3EMoAJtliAvhPds9vk5.1e965195.png').then(() => setLoading(false)) })
 
   return (
     <div className="App">
