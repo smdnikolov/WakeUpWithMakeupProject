@@ -1,6 +1,6 @@
 .App {
     text-align: center;
-    font-family: 'Pattaya', sans-serif;
+    font-family: "Pattaya", sans-serif;
 }
 
 .App-logo {
@@ -57,7 +57,8 @@
     animation: pulse 1s infinite;
 }
 
-.navbar-toggler:focus, .navbar-toggler:hover {
+.navbar-toggler:focus,
+.navbar-toggler:hover {
     text-decoration: none;
     outline: none;
 }
@@ -86,7 +87,8 @@
     }
 }
 
-.btn-stt, .btn-stt:focus {
+.btn-stt,
+.btn-stt:focus {
     display: none;
     position: fixed;
     bottom: 20px;
@@ -112,7 +114,7 @@
 }
 
 .social {
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 .navbar-dark .navbar-toggler-icon {
@@ -128,7 +130,7 @@
 .map {
     border: 2px solid black;
     margin-top: 20px;
-    max-width: 99%
+    max-width: 99%;
 }
 
 hr {
@@ -162,7 +164,7 @@ hr {
     .map {
         border: 2px solid black;
         margin-top: 20px;
-        max-width: 50%
+        max-width: 50%;
     }
     hr {
         max-width: 50%;
@@ -173,23 +175,23 @@ hr {
 }
 
 .img {
-    max-width: 95%
+    max-width: 95%;
 }
 
 .hydrated {
     --handle-color: #d7d7d7;
     --divider-color: #fff;
     --handle-opacity: none;
-    --handle-opacity-active: 'none';
+    --handle-opacity-active: "none";
 }
 
 .hydrated:focus {
-    outline: none
+    outline: none;
 }
 
 .page-header {
     margin: 50px;
-    text-decoration: underline
+    text-decoration: underline;
 }
 
 span {
@@ -197,9 +199,9 @@ span {
 }
 
 .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
-    background-image: url('./utils/close.png');
+    background-image: url("./utils/close.png");
 }
 
 .navbar-dark .navbar-toggler-icon {
-    background-image: url('./utils/menu.png');
+    background-image: url("./utils/menu.png");
 }
