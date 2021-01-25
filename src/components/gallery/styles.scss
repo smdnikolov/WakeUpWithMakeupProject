@@ -1,38 +1,22 @@
-.ekko-lightbox a {
-    opacity: 1;
-    text-decoration: none;
-  
+.lightbox-modifiers-box {
+    .lightbox-btn--ripple:nth-child(5) {
+        display: none;
+    }
+    .lightbox-btn--ripple:nth-child(4) {
+        display: none;
+    }
+    .lightbox-btn--ripple:nth-child(3) {
+        display: none;
+    }
 }
-.ekko-lightbox a:hover {
-    opacity: 1;
-    cursor: default;
-    text-decoration: none;
+.lightbox-title-content {
+    display: none;
 }
-.ekko-lightbox a span:hover {
-    opacity: 1;
-    cursor: pointer;
-    text-decoration: none;
+.lightbox-btn:focus {
+    outline: none;
 }
-.ekko-lightbox-nav-overlay a span {
-    padding: 0 1px;
+.lightbox-btn--ripple:hover circle {
+    transform: none !important;
+    fill: none !important;
+    transition: transform 0.2s ease;
 }
-.ekko-lightbox-nav-overlay a:last-child span {
-    text-align: right;
-   position: absolute;
-   right: 0px;
-    left: auto;
-}
-
-.ekko-lightbox-nav-overlay a>* {
-    -ms-flex-positive: 1;
-    flex-grow: 0;
-}
-
-.gallery a{
-padding-bottom: 1.5rem;
-}
-.gallery a img{
-   min-height: 240px;
-   max-height:500px;
-}
-

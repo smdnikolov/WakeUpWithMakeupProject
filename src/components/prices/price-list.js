@@ -1,4 +1,4 @@
-export default [
+const prices = [
     {
         id: 'price1',
         service: 'some service name',
@@ -35,3 +35,4 @@ export default [
     },
 
 ]
+export default prices

@@ -1,4 +1,4 @@
-export default [
+ const faq = [
     {
         id: 1,
         question: 'Разлики между Микроблейдинг, Микропигментация и Перманентен грим',
@@ -130,3 +130,4 @@ export default [
     }
 ]
 
+export default faq
