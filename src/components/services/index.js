@@ -5,6 +5,7 @@ import './styles.css'
 
 
 
+
 const Services = () => {
 
     const listItems = services.map((service) =>
@@ -33,7 +34,7 @@ const Services = () => {
         <div className="container">
             <h1 className="page-header">Услуги</h1>
             <div className='row services'>
-                <ul className='card-ul'>{listItems}</ul>,
+                <ul className='card-ul'>{listItems}</ul>
             </div>
         </div>
     )
