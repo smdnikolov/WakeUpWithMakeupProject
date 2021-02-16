@@ -1,29 +1,24 @@
 import React from 'react';
-import { Route, Switch } from "react-router-dom"
-import Home from '../components/home'
-import Services from '../components/services'
-import Service from '../components/service'
-import Prices from '../components/prices'
-import Gallery from '../components/gallery'
-import FAQ from '../components/faq'
-import Contacts from '../components/contacts'
-
-
-
+import { Route, Switch } from 'react-router-dom';
+import Home from '../components/home';
+import Services from '../components/services';
+import Service from '../components/service';
+import Prices from '../components/prices';
+import Gallery from '../components/gallery';
+import FAQ from '../components/faq';
+import Contacts from '../components/contacts';
 
 const Router = () => {
-
-
-    return (
-        <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/услуги" exact component={Services} />
-            <Route path="/услуги/:title" exact component={Service} />
-            <Route path="/цени" exact component={Prices} />
-            <Route path="/Галерия" exact component={Gallery} />
-            <Route path="/чзв" exact component={FAQ} />
-            <Route path="/контакти" exact component={Contacts} />
-            {/*
+  return (
+    <Switch>
+      <Route path="/" exact component={Home} />
+      <Route path="/услуги" exact component={Services} />
+      <Route path="/услуги/:title" exact component={Service} />
+      <Route path="/цени" exact component={Prices} />
+      <Route path="/Галерия" exact component={Gallery} />
+      <Route path="/чзв" exact component={FAQ} />
+      <Route path="/контакти" exact component={Contacts} />
+      {/*
             <ProtectedRoute user={user} path="/login" component={Login} />
             <ProtectedRoute user={user} path="/register" component={Register} />
             <Route path="/category/:name" component={Category} />
@@ -34,8 +29,8 @@ const Router = () => {
             <SearchProtect query={query} path="/search" component={Search} />
             <Route path="/network-error" component={NetworkError} />
             <Route path='*' exact component={NotFound} /> */}
-        </Switch>
-    )
-}
+    </Switch>
+  );
+};
 
 export default Router;

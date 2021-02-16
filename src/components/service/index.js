@@ -1,20 +1,10 @@
-import React from 'react'
-// import { Link } from 'react-router-dom'
-
-
-
-
+import React from 'react';
 const Service = () => {
+  return (
+    <div className="container">
+      <h1>Услуга</h1>
+    </div>
+  );
+};
 
-
-
-    return (
-        <div className="container">
-            <h1>Услуга</h1>
-
-
-        </div>
-    )
-}
-
-export default Service
+export default Service;

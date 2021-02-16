@@ -1,19 +1,32 @@
-import React from 'react'
+import React from 'react';
 
 const Footer = () => {
-    return (
-        <footer className="page-footer font-small teal pt-4">
-            <div className="container-fluid text-center text-md-center">
-                <div className="row">
-                    <div className="col">
-                        <h5 className="text-uppercase font-weight-bold">The Online Market ©</h5>
-                        <h5 className="text-uppercase font-weight-bold">2020</h5>
-                        <div>Icons made by <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar&nbsp;</a>
-                            from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-                    </div>
-                </div>
+  return (
+    <footer className="page-footer font-small teal pt-4">
+      <div className="container-fluid text-center text-md-center">
+        <div className="row">
+          <div className="col">
+            <h5 className="text-uppercase font-weight-bold">
+              The Online Market ©
+            </h5>
+            <h5 className="text-uppercase font-weight-bold">2020</h5>
+            <div>
+              Icons made by{' '}
+              <a
+                href="https://www.flaticon.com/authors/iconixar"
+                title="iconixar"
+              >
+                iconixar&nbsp;
+              </a>
+              from{' '}
+              <a href="https://www.flaticon.com/" title="Flaticon">
+                www.flaticon.com
+              </a>
             </div>
-        </footer>
-    )
-}
-export default Footer
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+export default Footer;

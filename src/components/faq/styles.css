@@ -1,60 +1,59 @@
-a:hover,a:focus{
-    text-decoration: none;
-    outline: none;
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: none;
 }
-#accordion .panel{
-    border: none;
-    box-shadow: none;
-    border-radius: 0;
-    margin-bottom: 20px;
+#accordion .panel {
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  margin-bottom: 20px;
 }
-#accordion .panel-heading{
-    padding: 0;
-    border: none;
+#accordion .panel-heading {
+  padding: 0;
+  border: none;
 }
-#accordion .panel-title a{
-    display: block;
-    padding: 10px 35px 10px 5px;
-    background: #fff;
-    font-size: 16px;
-    font-weight: 600;
-    color: #000;
-    border: 1px solid transparent;
-    position: relative;
-    text-align: justify;
+#accordion .panel-title a {
+  display: block;
+  padding: 10px 35px 10px 5px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  border: 1px solid transparent;
+  position: relative;
+  text-align: justify;
 }
 
 #accordion .panel-title a:before,
-#accordion .panel-title a.collapsed:before{
-    content: "✖";
-    font-family: "Font Awesome 5 Free";
-    font-weight: 900;
-    font-size: 18px;
-    font-weight: normal;
-    color: #000;
-    position: absolute;
-    top: 21%;
-    right: 5px;
-    transition: all 0.5s ease 0s;
+#accordion .panel-title a.collapsed:before {
+  content: '✖';
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  font-size: 18px;
+  font-weight: normal;
+  color: #000;
+  position: absolute;
+  top: 21%;
+  right: 5px;
+  transition: all 0.5s ease 0s;
 }
 #accordion .panel-title a.collapsed:before {
-    content: "✚";
+  content: '✚';
 }
-#accordion .panel-body{
-    padding: 10px 30px;
-    border: none;
-    font-size: 14px;
-    color: #808080;
-    line-height: 25px;
+#accordion .panel-body {
+  padding: 10px 30px;
+  border: none;
+  font-size: 14px;
+  color: #808080;
+  line-height: 25px;
 }
-#accordion .panel-body p{
-    margin-bottom: 20px;
-    text-align: justify;
+#accordion .panel-body p {
+  margin-bottom: 20px;
+  text-align: justify;
 }
 #accordion .panel-default {
-    border: 2px solid #000;
+  border: 2px solid #000;
 
-    box-shadow: 6px 8px 4px 2px rgba(0,0,0,.25)
-    
+  box-shadow: 6px 8px 4px 2px rgba(0, 0, 0, 0.25);
 }
-

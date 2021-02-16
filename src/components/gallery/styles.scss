@@ -1,22 +1,22 @@
 .lightbox-modifiers-box {
-    .lightbox-btn--ripple:nth-child(5) {
-        display: none;
-    }
-    .lightbox-btn--ripple:nth-child(4) {
-        display: none;
-    }
-    .lightbox-btn--ripple:nth-child(3) {
-        display: none;
-    }
+  .lightbox-btn--ripple:nth-child(5) {
+    display: none;
+  }
+  .lightbox-btn--ripple:nth-child(4) {
+    display: none;
+  }
+  .lightbox-btn--ripple:nth-child(3) {
+    display: none;
+  }
 }
 .lightbox-title-content {
-    display: none;
+  display: none;
 }
 .lightbox-btn:focus {
-    outline: none;
+  outline: none;
 }
 .lightbox-btn--ripple:hover circle {
-    transform: none !important;
-    fill: none !important;
-    transition: transform 0.2s ease;
+  transform: none !important;
+  fill: none !important;
+  transition: transform 0.2s ease;
 }
