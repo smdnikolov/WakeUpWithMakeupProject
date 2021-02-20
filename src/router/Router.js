@@ -7,6 +7,7 @@ import Prices from '../components/prices';
 import Gallery from '../components/gallery';
 import FAQ from '../components/faq';
 import Contacts from '../components/contacts';
+import NotFound from '../components/not-found';
 
 const Router = () => {
   return (
@@ -18,6 +19,7 @@ const Router = () => {
       <Route path="/Галерия" exact component={Gallery} />
       <Route path="/чзв" exact component={FAQ} />
       <Route path="/контакти" exact component={Contacts} />
+      <Route path="*" exact component={NotFound} />
       {/*
             <ProtectedRoute user={user} path="/login" component={Login} />
             <ProtectedRoute user={user} path="/register" component={Register} />

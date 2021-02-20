@@ -76,10 +76,16 @@ const Home = () => {
           </div>
           <div className="flip-card-back circle">
             <span className="circle-content">
-              {service.description.slice(0, 30)}
+              {service.description.slice(0, 185) + '...'}
               <p>
                 {' '}
-                <Link className="card-link" to={service.link}>
+                <Link
+                  className="card-link"
+                  to={
+                    '/услуги/' +
+                    service.title.toLocaleLowerCase().replaceAll(' ', '-')
+                  }
+                >
                   Виж още
                 </Link>
               </p>

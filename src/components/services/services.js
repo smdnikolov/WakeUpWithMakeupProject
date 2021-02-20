@@ -1,33 +1,55 @@
 const services = [
   {
-    title: 'Test',
-    description: 'TestTest TestTest TestTest TestTestTest',
-    image:
-      'https://images2.minutemediacdn.com/image/upload/c_crop,h_1251,w_2222,x_333,y_0/f_auto,q_auto,w_1100/v1554930566/shape/mentalfloss/58424-istock-636100670-eyebrows.jpg',
-    link: '/услуги/.',
-  },
-  {
-    title: 'Test2',
-    description: 'TestTest TestTest TestTest TestTestTest',
-    image:
-      'https://images2.minutemediacdn.com/image/upload/c_crop,h_1251,w_2222,x_333,y_0/f_auto,q_auto,w_1100/v1554930566/shape/mentalfloss/58424-istock-636100670-eyebrows.jpg',
-    link: '/услуги/.',
-  },
-  {
-    title: 'Test3',
+    title: 'Миркопигментация Очна Линия',
     description:
-      'estTest TestTest TestTest TestTestTestestTest TestTest TestTest TestTestTestestTest TestTest TestTest TestTestTest',
-    image:
-      'https://images2.minutemediacdn.com/image/upload/c_crop,h_1251,w_2222,x_333,y_0/f_auto,q_auto,w_1100/v1554930566/shape/mentalfloss/58424-istock-636100670-eyebrows.jpg',
-    link: '/услуги/.',
+      'Микропигментацията на клепачите е лесен и надежден начин да подчертаете очите си без продължителния ежедневен процес на гримиране. Технологията на перманентния грим на  ви позволява да направите   миглите да изглеждат по-плътни и очите по-изразителни.\nМикропигментацията на клепачите е процедура по време на която пигментът се нанася върху пространството между миглите с помощта на специална тънка игла по линията на миглите или извън нея (в зависимост от избраната техника). След това, за период от 1 до 3 години, можете да забравите ежедневният грим без да се притеснявайте как изглеждате във фитнес залата, басейна или на почивка.',
+    benefits: '',
+    stages: '',
+    preparation: '',
+    healing: '',
+    sideEffectsAbsolute: '',
+    sideEffectsMinor: '',
+    more: '',
+    image: '/услуги/мп-очна-линия.jpg',
   },
   {
-    title: 'Test4',
+    title: 'Миркопигментация Устни',
     description:
-      'estTest TestTest TestTest TestTestTestestTest TestTest TestTest TestTestTestestTest TestTest TestTest TestTestTest',
-    image:
-      'https://images2.minutemediacdn.com/image/upload/c_crop,h_1251,w_2222,x_333,y_0/f_auto,q_auto,w_1100/v1554930566/shape/mentalfloss/58424-istock-636100670-eyebrows.jpg',
-    link: '/услуги/ss',
+      'Микропигментацията на устните е иновативна техника на перманентен грим на устните, която ви позволява да подобрите естествената красота на устните си по най-естествения и изчистен начин, както и да засилите цвета на устните си, да им придадете съблазнителен обем без използването на козметична хирургия (гелове, филъри и др.) ',
+    benefits: '',
+    stages: '',
+    preparation: '',
+    healing: '',
+    sideEffectsAbsolute: '',
+    sideEffectsMinor: '',
+    more: '',
+    image: '/услуги/мп-устни.jpg',
+  },
+  {
+    title: 'Миркопигментация Вежди',
+    description:
+      'Микропигментацията представлява въвеждане на микродози от специализирани пигменти в горните слоеве на епидермиса посредством дермограф.С течение на времето пигмента се метаболизира от организма без никаква вреда за здравето. Подходяща е за всякакъв вид кожа.',
+    benefits: '',
+    stages: '',
+    preparation: '',
+    healing: '',
+    sideEffectsAbsolute: '',
+    sideEffectsMinor: '',
+    more: '',
+    image: '/услуги/мп-вежди.jpg',
+  },
+  {
+    title: 'Микроблейдинг',
+    description:
+      'Микроблейдинг е ръчно създаване на микро разрези в повърхностния слой на кожата. Всеки косъм се "рисува" отделно за постигане на максимално естествен резултат. Микроблейдингът е подходящ при хора с нормална кожа. Не се препоръчва при мазна кожа,тъй като се наблюдава ниска трайност на татуировката.',
+    benefits: '',
+    stages: '',
+    preparation: '',
+    healing: '',
+    sideEffectsAbsolute: '',
+    sideEffectsMinor: '',
+    more: '',
+    image: '/услуги/микроблейдинг.jpg',
   },
 ];
 export default services;

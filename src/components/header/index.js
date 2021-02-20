@@ -3,8 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../utils/1j+ojFVDOMkX9Wytexe43D6kifCCrhBGkBbNwXs1M3EMoAJtliAvhPds9vk5.png';
 import call from '../../utils/call.png';
 import viber from '../../utils/viber.png';
-import instagram from '../../utils/instagram.png';
-import facebook from '../../utils/facebook.png';
 
 function Header() {
   return (
@@ -25,25 +23,6 @@ function Header() {
         </div>
       </nav>
       <nav className="navbar navbar-expand-md  navbar-dark">
-        <div>
-          <a
-            className="social"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.facebook.com/permanent.makeup.elenayordanova"
-          >
-            <img src={facebook} width="30px" alt="" />
-          </a>
-          <a
-            className="social"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://www.instagram.com/wake_up_with_makeup/"
-          >
-            <img src={instagram} width="30px" alt="" />
-          </a>
-        </div>
-
         <button
           className="navbar-toggler"
           type="button"

@@ -25,6 +25,8 @@
 
 .navbar {
   margin: 20px 0px 20px;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .navbar-dark .navbar-nav .nav-link {
@@ -197,7 +199,8 @@ hr {
 }
 
 .page-header {
-  margin: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   text-decoration: underline;
 }
 
@@ -217,4 +220,14 @@ span {
 .slick-prev {
   position: sticky;
   padding: 0;
+}
+.social-container {
+  z-index: 0;
+  position: absolute;
+}
+.not-found img {
+  max-height: 80vh;
+  min-height: 50vh;
+  max-width: 90vw;
+  min-width: 50vw;
 }

@@ -66,28 +66,30 @@
 }
 
 .card-link {
-  color: #17a2b8;
+  color: #035c69;
   text-decoration: none;
   background-color: transparent;
 }
 .card-link:hover {
-  color: #17a2b8;
+  color: #035c69;
   text-decoration: underline;
   background-color: transparent;
 }
 .circle {
-  background: #456bd9;
+  background: #fff;
   border-radius: 50%;
-  color: #fff;
+  color: #000;
   height: 300px;
   position: relative;
   width: 300px;
+  box-shadow: inset -10px -10px 20px 0px #f7c3e1;
 }
 
 .circle-content {
   hyphens: auto;
   margin: 0.75em;
   text-align: center;
+  font-size: 15px;
 }
 
 @supports (shape-outside: circle(50%)) {
