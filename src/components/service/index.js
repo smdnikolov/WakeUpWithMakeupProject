@@ -18,10 +18,64 @@ const Service = (props) => {
     return <NotFound />;
   } else {
     return (
-      <div className="container">
-        <h1 className="page-header">{service.title}</h1>
-        <p>{service.description}</p>
-      </div>
+      <>
+        <div className="container">
+          <h1 className="page-header">{service.title}</h1>
+          <div
+            className="heading"
+            style={{
+              background: `url(${service.image}) no-repeat center`,
+              marginBottom: '50px',
+              WebkitBackgroundSize: 'cover',
+              MozBbackgroundSize: 'cover',
+              OBackgroundSize: 'cover',
+              backgroundSize: 'cover',
+            }}
+          ></div>
+          <div className="row">
+            <div className="col">
+              <p
+                style={{
+                  textAlign: 'justify',
+                }}
+              >
+                {service.description}
+              </p>
+              <div className="service-row">
+                <div className="underline" />
+                <h3>Ползи</h3>
+                <div className="underline" />
+                <p
+                  style={{
+                    textAlign: 'center',
+                  }}
+                >
+                  {service.benefits}
+                </p>
+                <div className="underline" />
+                <h3>Етапи</h3>
+                <div className="underline" />
+                <div className="stages">
+                  {service.stages.map((x, index) => {
+                    return (
+                      <div className="stage" key={index}>
+                        <img
+                          src={x[Object.keys(x)[0]]}
+                          style={{ width: '50px' }}
+                          alt=""
+                        />
+                        <p>
+                          {index + 1}. {Object.keys(x)[0]}
+                        </p>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </>
     );
   }
 };

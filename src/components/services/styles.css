@@ -5,11 +5,20 @@
 .card-li {
   display: inline-block;
 }
+.stages {
+  display: flex;
+}
+.stage {
+  margin: auto;
+}
 @media only screen and (max-width: 450px) {
   .card-ul {
     display: inline-block;
     list-style: none;
     width: 100%;
+  }
+  .stages {
+    display: inline;
   }
 }
 
@@ -159,4 +168,36 @@
   text-align: center;
   opacity: 0.25;
   color: #000;
+}
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+.underline {
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin-right: auto;
+  margin-bottom: 10px;
+  margin-left: auto;
+  border-top: 5px solid #dbcdbd;
+}
+.heading {
+  top: 50%;
+  height: 300px;
+}
+.service-row span {
+  margin-top: 50px;
 }

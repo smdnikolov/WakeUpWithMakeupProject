@@ -6,7 +6,7 @@ import viber from '../../utils/viber.png';
 
 function Header() {
   return (
-    <div>
+    <div className="header">
       <Link className="navbar-brand" to="/">
         <img className="logo" src={logo} width="90%" alt="" />
       </Link>
