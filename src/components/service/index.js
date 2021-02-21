@@ -55,10 +55,10 @@ const Service = (props) => {
                 <div className="underline" />
                 <h3>Етапи</h3>
                 <div className="underline" />
-                <div className="stages">
+                <ul className="stages">
                   {service.stages.map((x, index) => {
                     return (
-                      <div className="stage" key={index}>
+                      <li className="stage" key={index}>
                         <img
                           src={x[Object.keys(x)[0]]}
                           style={{ width: '50px' }}
@@ -67,10 +67,10 @@ const Service = (props) => {
                         <p>
                           {index + 1}. {Object.keys(x)[0]}
                         </p>
-                      </div>
+                      </li>
                     );
                   })}
-                </div>
+                </ul>
               </div>
             </div>
           </div>

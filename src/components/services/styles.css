@@ -6,10 +6,13 @@
   display: inline-block;
 }
 .stages {
-  display: flex;
+  display: inline-block;
 }
 .stage {
   margin: auto;
+  display: inline-block;
+  width: 20rem;
+  vertical-align: text-top;
 }
 @media only screen and (max-width: 450px) {
   .card-ul {
