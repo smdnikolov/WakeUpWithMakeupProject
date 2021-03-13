@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import services from '../services/services';
 import NotFound from '../not-found';
 
@@ -14,6 +14,10 @@ const Service = (props) => {
     const text = props.text;
     return text.split('\n').map((str, index) => <p key={index}>{str}</p>);
   }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   if (!titles.includes(serviceTitle)) {
     return <NotFound />;
@@ -110,7 +114,7 @@ const Service = (props) => {
                   </>
                 ) : null}
 
-                {service.last ? (
+                {service.care ? (
                   <>
                     <div className='underline'></div>
                     <h3>Последваща Грижа</h3>
