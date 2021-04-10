@@ -186,7 +186,7 @@ hr {
     min-width: 90vw;
   }
   .leaflet-container {
-    width: 80%;
+    width: 60%;
     display: inline-block;
     height: 500px;
   }
