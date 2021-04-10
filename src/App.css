@@ -52,7 +52,7 @@
   animation: pulse 1s infinite;
 }
 
-.viber {
+.messenger {
   margin-top: -50px;
   margin-right: 20px;
   float: right;
@@ -149,7 +149,7 @@ hr {
   .call {
     display: none;
   }
-  .viber {
+  .messenger {
     display: none;
   }
   .navbar .navbar-nav {
@@ -225,4 +225,9 @@ span {
   min-height: 50vh;
   max-width: 90vw;
   min-width: 50vw;
+}
+hr.style-two {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
