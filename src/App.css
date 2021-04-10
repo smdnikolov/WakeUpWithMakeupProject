@@ -144,6 +144,11 @@ hr {
 .img {
   width: 100%;
 }
+.leaflet-container {
+  width: 90vw;
+  display: inline-block;
+  height: 50vh;
+}
 
 @media (min-width: 768px) {
   .call {
@@ -179,6 +184,11 @@ hr {
   }
   .img {
     min-width: 90vw;
+  }
+  .leaflet-container {
+    width: 80%;
+    display: inline-block;
+    height: 500px;
   }
 }
 
