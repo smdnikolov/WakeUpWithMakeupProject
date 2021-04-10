@@ -1,5 +1,4 @@
 import React from 'react';
-import map from '../../utils/map.jpg';
 import Map from './map';
 
 const Contacts = () => {
