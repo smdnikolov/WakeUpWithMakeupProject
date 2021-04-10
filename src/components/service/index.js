@@ -125,6 +125,29 @@ const Service = (props) => {
                   </>
                 ) : null}
 
+                {service.custom ? (
+                  <>
+                    {service.custom.map((element, index) => {
+                      return (
+                        <div key={index}>
+                          <div className='underline'></div>
+                          <h3>{Object.keys(element)}</h3>
+                          <div className='underline'></div>
+                          {Object.keys(element)[0] === 'Времетраене' ? (
+                            <div className=''>
+                              <NewlineText text={Object.values(element)[0]} />
+                            </div>
+                          ) : (
+                            <div className='text-content'>
+                              <NewlineText text={Object.values(element)[0]} />
+                            </div>
+                          )}
+                        </div>
+                      );
+                    })}
+                  </>
+                ) : null}
+
                 {service.last ? (
                   <div>
                     <br></br>

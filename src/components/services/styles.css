@@ -1,9 +1,10 @@
 .card-ul {
-  display: inline-block;
+  display: contents;
   list-style: none;
 }
 .card-li {
   display: inline-block;
+  margin: auto;
 }
 .stages {
   display: inline-block;
