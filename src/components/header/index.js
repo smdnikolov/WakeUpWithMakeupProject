@@ -17,7 +17,7 @@ function Header() {
           </a>
         </div>
         <div className='messenger'>
-          <a href='https://www.messenger.com/t/100000208277245'>
+          <a href='https://m.me/permanent.makeup.elenayordanova'>
             <img src={messenger} width='30px' alt='' />
           </a>
         </div>
