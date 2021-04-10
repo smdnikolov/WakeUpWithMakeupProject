@@ -3,7 +3,7 @@ import { MapContainer, TileLayer, Marker, Popup, ZoomControl } from 'react-leafl
 
 const Map = () => {
   return (
-    <MapContainer center={[42.722453, 23.258676]} zoom={16} scrollWheelZoom={true}>
+    <MapContainer center={[42.722453, 23.258676]} zoom={16} scrollWheelZoom={true} zoomControl={false}>
       <ZoomControl position='topright'></ZoomControl>
       <TileLayer
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
