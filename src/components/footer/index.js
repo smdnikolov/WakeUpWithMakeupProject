@@ -8,7 +8,7 @@ const Footer = () => {
 
   return (
     <footer className='page-footer font-small teal pt-4'>
-      <hr className='style-two'></hr>
+      <hr className='style-two' style={{ maxWidth: '90%' }}></hr>
 
       <div className='container-fluid text-center text-md-center'>
         <div className='row'>
